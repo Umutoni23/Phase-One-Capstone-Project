@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Books - Book Explorer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 p-4 md:p-8">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md mb-8">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">📚 Book Explorer</h1>
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+        <li><a href="books.html" class="hover:text-blue-500 font-bold">Books</a></li>
+        <li><a href="about.html" class="hover:text-blue-500">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h2 class="text-3xl font-bold mb-6 text-center">All Books</h2>
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+    <!-- Book Card 1 -->
+    <div class="bg-white shadow rounded p-4">
+      <div class="h-64 overflow-hidden rounded">
+        <img src="more that crown.jpg" alt="Book Cover" class="w-full h-full object-cover">
+      </div>
+      <h4 class="font-bold mt-2">More Than a Crown</h4>
+      <p class="text-sm text-gray-600">Author: Naomi Nishimwe</p>
+      <p class="mt-1 text-gray-700 text-sm">A story about courage and leadership.</p>
+      <button onclick="window.location.href='order.html?book=More+Than+a+Crown&author=Naomi+Nishimwe'" 
+              class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-500 transition">
+        Buy Now
+      </button>
+    </div>
+
+    <!-- Book Card 2 -->
+    <div class="bg-white shadow rounded p-4">
+      <div class="h-64 overflow-hidden rounded">
+        <img src="Do not accept to die.jpg" alt="Book Cover" class="w-full h-full object-cover">
+      </div>
+      <h4 class="font-bold mt-2">Do Not Accept to Die</h4>
+      <p class="text-sm text-gray-600">Author: Mukanyiligira Sissi Dimitrie</p>
+      <p class="mt-1 text-gray-700 text-sm">An inspiring story of resilience and survival.</p>
+      <button onclick="window.location.href='order.html?book=Do+Not+Accept+to+Die&author=Mukanyiligira+Sissi+Dimitrie'" 
+              class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-500 transition">
+        Buy Now
+      </button>
+    </div>
+
+    <!-- Book Card 3 -->
+    <div class="bg-white shadow rounded p-4">
+      <div class="h-64 overflow-hidden rounded">
+        <img src="Long walk to freedom.jpg" alt="Book Cover" class="w-full h-full object-cover">
+      </div>
+      <h4 class="font-bold mt-2">Long Walk to Freedom</h4>
+      <p class="text-sm text-gray-600">Author: Nelson Mandela</p>
+      <p class="mt-1 text-gray-700 text-sm">Autobiography of Nelson Mandela’s journey to freedom.</p>
+      <button onclick="window.location.href='order.html?book=Long+Walk+to+Freedom&author=Nelson+Mandela'" 
+              class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-500 transition">
+        Buy Now
+      </button>
+    </div>
+
+    <!-- Book Card 4 -->
+    <div class="bg-white shadow rounded p-4">
+      <div class="h-64 overflow-hidden rounded">
+        <img src="Left to tell.jpg" alt="Book Cover" class="w-full h-full object-cover">
+      </div>
+      <h4 class="font-bold mt-2">Left to Tell</h4>
+      <p class="text-sm text-gray-600">Author: Immaculee Ilibagiza</p>
+      <p class="mt-1 text-gray-700 text-sm">The story of surviving the Rwandan genocide.</p>
+      <button onclick="window.location.href='order.html?book=Left+to+Tell&author=Immaculee+Ilibagiza'" 
+              class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-500 transition">
+        Buy Now
+      </button>
+    </div>
+
+    <!-- Book Card 5 -->
+    <div class="bg-white shadow rounded p-4">
+      <div class="h-64 overflow-hidden rounded">
+        <img src="Things fall a part.jpg" alt="Book Cover" class="w-full h-full object-cover">
+      </div>
+      <h4 class="font-bold mt-2">Things Fall Apart</h4>
+      <p class="text-sm text-gray-600">Author: Chinua Achebe</p>
+      <p class="mt-1 text-gray-700 text-sm">A classic tale about tradition and change.</p>
+      <button onclick="window.location.href='order.html?book=Things+Fall+Apart&author=Chinua+Achebe'" 
+              class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-500 transition">
+        Buy Now
+      </button>
+    </div>
+
+    <!-- Book Card 6 -->
+    <div class="bg-white shadow rounded p-4">
+      <div class="h-64 overflow-hidden rounded">
+        <img src="The AIchimest.jpg" alt="Book Cover" class="w-full h-full object-cover">
+      </div>
+      <h4 class="font-bold mt-2">The Aichimest</h4>
+      <p class="text-sm text-gray-600">Author: Paulo Coelho</p>
+      <p class="mt-1 text-gray-700 text-sm">A journey of dreams, destiny, and self-discovery.</p>
+      <button onclick="window.location.href='order.html?book=The+Aichimest&author=Paulo+Coelho'" 
+              class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-500 transition">
+        Buy Now
+      </button>
+    </div>
+
+    <!-- Book Card 7 -->
+    <div class="bg-white shadow rounded p-4">
+      <div class="h-64 overflow-hidden rounded">
+        <img src="Girl who smiled beads.jpg" alt="Book Cover" class="w-full h-full object-cover">
+      </div>
+      <h4 class="font-bold mt-2">Girl Who Smiled Beads</h4>
+      <p class="text-sm text-gray-600">Author: Cynthia Leitich Smith</p>
+      <p class="mt-1 text-gray-700 text-sm">A memoir about courage, identity, and hope.</p>
+      <button onclick="window.location.href='order.html?book=Girl+Who+Smiled+Beads&author=Cynthia+Leitich+Smith'" 
+              class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-500 transition">
+        Buy Now
+      </button>
+    </div>
+
+    <!-- Book Card 8 -->
+    <div class="bg-white shadow rounded p-4">
+      <div class="h-64 overflow-hidden rounded">
+        <img src="The Kite Runner.jpg" alt="Book Cover" class="w-full h-full object-cover">
+      </div>
+      <h4 class="font-bold mt-2">The Kite Runner</h4>
+      <p class="text-sm text-gray-600">Author: Khaled Hosseini</p>
+      <p class="mt-1 text-gray-700 text-sm">A story of friendship, betrayal, and redemption.</p>
+      <button onclick="window.location.href='order.html?book=The+Kite+Runner&author=Khaled+Hosseini'" 
+              class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-500 transition">
+        Buy Now
+      </button>
+    </div>
+
+  </div>
+
+<!-- ================= FOOTER ================= -->
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="max-w-7xl mx-auto text-center">
+      <p>© 2026 Book Explorer. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
