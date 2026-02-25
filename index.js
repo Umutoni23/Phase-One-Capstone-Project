@@ -7,15 +7,27 @@ document.addEventListener("DOMContentLoaded", function () {
   function filterBooks() {
     const searchValue = searchInput.value.toLowerCase().trim();
 
-    bookCards.forEach(card => {
-      const title = card.querySelector("h4").textContent.toLowerCase();
+    // Show a loading effect
+    bookCards.forEach(card => card.style.opacity = 0.5);
+    searchBtn.textContent = "Loading...";
+    searchBtn.disabled = true;
 
-      if (title.includes(searchValue)) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
-    });
+    // Simulate 3-second delay
+    setTimeout(() => {
+      bookCards.forEach(card => {
+        const title = card.querySelector("h4").textContent.toLowerCase();
+        if (title.includes(searchValue)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+        card.style.opacity = 1; // reset opacity
+      });
+
+      // Reset button
+      searchBtn.textContent = "Search";
+      searchBtn.disabled = false;
+    }, 3000); // 3000ms = 3 seconds
   }
 
   // When search button is clicked

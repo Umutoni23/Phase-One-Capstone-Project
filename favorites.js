@@ -34,14 +34,20 @@ document.addEventListener("DOMContentLoaded", () => {
   // ====== DISPLAY FAVORITES ON favorite.html ======
   const favoritesContainer = document.getElementById("favorites-container");
   if (favoritesContainer) {
-    displayFavorites();
+    // Show loading message first
+    favoritesContainer.innerHTML = "<p class='text-center text-gray-600'>Loading favorites...</p>";
+
+    // Wait 3 seconds before displaying the books
+    setTimeout(() => {
+      displayFavorites();
+    }, 3000); // 3000ms = 3 seconds
   }
 
   function displayFavorites() {
     const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
     if (favorites.length === 0) {
-      favoritesContainer.innerHTML = "<p>No favorite books yet.</p>";
+      favoritesContainer.innerHTML = "<p class='text-center text-gray-600'>No favorite books yet.</p>";
       return;
     }
 
