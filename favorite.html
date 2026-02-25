@@ -18,8 +18,8 @@
   <span class="text-white font-bold text-xl">Done by Leoncie</span>
 </a>
 
-
       <h1 class="text-2xl font-bold text-blue-600">📚 Book Explorer</h1>
+      
       <ul class="hidden md:flex space-x-6 font-medium">
         <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
         <li><a href="favorite.html" class="hover:text-blue-500 font-bold">Favorites</a></li>
@@ -28,6 +28,13 @@
     </div>
   </nav>
   <h2 class="text-3xl font-bold mb-6 text-center">All Books</h2>
+
+  <div class="flex justify-center mb-6">
+    <form class="w-full max-w-md flex" action="#" onsubmit="return false;">
+      <input id="search-input" type="text" placeholder="Search books..." class="flex-1 px-4 py-2 rounded-l border border-gray-300 focus:outline-none" />
+      <button id="search-btn" class="bg-green-500 text-white px-4 py-2 rounded-r hover:bg-green-600">Search</button>
+    </form>
+  </div>
 
   <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
 
