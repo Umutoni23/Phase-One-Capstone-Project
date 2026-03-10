@@ -41,3 +41,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+// Responsive Navbar Toggle
+const menuBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('hidden'); // show/hide menu
+});
